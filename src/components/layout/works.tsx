@@ -1,3 +1,5 @@
+import { HorizontalExpand } from "../general/styles";
+
 const ImageStyle = {
   borderRadius: "10px",
   marginBlock: "20px",
@@ -6,8 +8,7 @@ const ImageStyle = {
 const Works = () => {
   return (
     <>
-      {" "}
-      <div style={{}}>
+      <div style={{marginBottom: "20px"}}>
         <div
           style={{
             marginBlock:"30px",
@@ -19,10 +20,7 @@ const Works = () => {
         >
           Moje Prace
         </div>
-        <div style={{
-            width:"500%",
-            marginLeft:"-200%",
-        }}>
+        <div style={HorizontalExpand}>
           <div
             style={{
               display: "flex",
@@ -30,10 +28,7 @@ const Works = () => {
               gap: "30px",
               justifyContent: "center",
               borderRadius: "10px",
-              // borderWidth: "3px",
-              // borderColor: "#000000",
-              // border: "2px solid white",
-              background: "#9381ff",
+              background: "#e079d3",
             }}
           >
             <img

@@ -17,5 +17,5 @@ export const AppTheme = createTheme({
   },
   typography: {
     fontFamily: "Roboto",
-  }
+  },
 });
