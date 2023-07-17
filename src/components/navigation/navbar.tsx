@@ -8,7 +8,7 @@ const NavLinks = [
     link: "/",
   },
   {
-    title: "Oferta",
+    title: "Oferta i cennik",
     link: "/offer",
   },
   {
