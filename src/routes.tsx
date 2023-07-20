@@ -3,11 +3,16 @@ import Home from "./pages/home";
 import Navbar from "./components/navigation/navbar";
 import React from "react";
 import { Box } from "@mui/material";
+import Offer from "./pages/offer";
 
 const Routes = [
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/offer",
+    element: <Offer/>,
   }
 ];
 
