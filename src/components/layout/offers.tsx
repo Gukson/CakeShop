@@ -23,15 +23,14 @@ const Offers = () => {
 
     return (
         <Box>
-            {offer.map((item) => {
+            {offer.map((item,i) => {
                 return (
-                    <div style={{ width: "70%", padding: "10px", margin: "auto" }}>
+                    <div style={{ width: "70%", padding: "10px", margin: "auto" }} key={i}>
                         <Accordion>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"
-                                id="panel1a-header"
-                            >
+                                id="panel1a-header">
                                 <Typography style={{
                                     height: "100px",
                                     color: "#e079d3", margin: "auto", textAlign: "center",
