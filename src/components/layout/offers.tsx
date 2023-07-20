@@ -5,9 +5,22 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box } from "@mui/material";
-
+import {useState, useEffect} from "react";
+import {FetchOffers} from "../../API/fetchOffers.ts";
 
 const Offers = () => {
+    const [offers, setOffers] = useState({});
+
+    useEffect(() => {
+        const GetData = async () => {
+            const fetchedOffers = await FetchOffers();
+            console.log(fetchedOffers);
+            console.log(offers);
+            setOffers(fetchedOffers as { [key: string]: string });
+        }
+        void GetData();
+    },[])
+
     return (
         <Box>
             {offer.map((item) => {

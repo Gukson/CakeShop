@@ -17,13 +17,6 @@ const NavLinks = [
   },
 ];
 
-const NavIcons = [
-  {
-    icon: <ShoppingCart />,
-    link: "/cart",
-  },
-];
-
 const leftLinkStyle = {
   marginRight: "1rem",
   color: "white",
@@ -44,11 +37,11 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        {NavIcons.map((icon) => (
-          <Link key={icon.link} style={rightLinkStyle} to={icon.link}>
-            {icon.icon}
-          </Link>
-        ))}
+        <Box flexGrow={"1" }/>
+        <Link key={"/cart"} style={rightLinkStyle} to={"/cart"}>
+          <ShoppingCart />
+        </Link>
+        <IconedMenu icon={<AccountCircle/>}/>
       </Toolbar>
     </AppBar>
   );
